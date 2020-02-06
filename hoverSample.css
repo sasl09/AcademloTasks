@@ -1,7 +1,8 @@
 body{
     font-family: 'open sans';
     margin: 0px;
-    background: grey;
+    background: pink; /*Here's a test change for git practice*/
+
 }
 
 .menu-container{
