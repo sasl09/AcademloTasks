@@ -1,7 +1,7 @@
 body{
     font-family: 'open sans';
     margin: 0px;
-    background: pink; /*Here's a test change for git practice*/
+    background: black; /*Here's a test change for git practice*/
 
 }
 
@@ -123,13 +123,15 @@ i {
   margin-bottom: 300px;
 }
 
-h2 {
+div > h2 {
   padding: 15px;
   text-indent: 10px;
+  margin-left: 15px;
 }
 
-p {
+div > p {
   padding: 15px;
+  margin-left: 20px;
 }
 
 ul {
@@ -167,6 +169,153 @@ span {
 	top:1px;
 }
 
-a {
-  margin-left: 35px;
+div > a {
+  margin-left: 45px;
+  margin-top: 50px;
+}
+
+.accesories-box-a {
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 45px 20px 45px;
+  background-color: black;
+  height: 300px;
+  /* background-color: yellow; */
+}
+
+.accesories-box-1:hover {
+  cursor: pointer;
+  background-color: #e4c219;
+  color: black;
+  transition-delay: 0.4s;
+  transition-timing-function: linear;
+}
+
+.accesories-box-2:hover {
+  cursor: pointer;
+  background-color: #e4c219;
+  color: black;
+  transition-delay: 0.4s;
+  transition-timing-function: linear;
+}
+
+.accesories-box-3:hover {
+  cursor: pointer;
+  background-color: #e4c219;
+  color: black;
+  transition-delay: 0.4s;
+  transition-timing-function: linear;
+}
+
+.accesories-box-4:hover {
+  cursor: pointer;
+  background-color: #e4c219;
+  color: black;
+  transition-delay: 0.4s;
+  transition-timing-function: linear;
+}
+
+.accesories-box-5:hover {
+  cursor: pointer;
+  background-color: #e4c219;
+  color: black;
+  transition-delay: 0.4s;
+  transition-timing-function: linear;
+}
+
+.accesories-box-6:hover {
+  cursor: pointer;
+  background-color: #e4c219;
+  color: black;
+  transition-delay: 0.4s;
+  transition-timing-function: linear;
+}
+
+
+.accesories-box-b {
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  margin: 20px 45px 20px 45px;
+  background-color: black;
+  height: 300px;
+  /* background-color: yellow; */
+}
+
+.accesories-box-1 {
+  padding: 10px 10px 15px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-grow: 1;
+  background-color: black;
+  color: white;
+  border: solid white 1.5px;
+}
+
+.accesories-box-2 {
+  padding: 10px 10px 15px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-grow: 1;
+  background-color: black;
+  color: white;
+  border: solid white 1.5px;
+}
+
+.accesories-box-3 {
+  padding: 10px 10px 15px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-grow: 1;
+  background-color: black;
+  color: white;
+  border: solid white 1.5px;
+}
+
+.accesories-box-4 {
+  padding: 10px 10px 15px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-grow: 1;
+  background-color: black;
+  color: white;
+  border: solid white 1.5px;
+}
+
+.accesories-box-5 {
+  padding: 10px 10px 15px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-grow: 1;
+  background-color: black;
+  color: white;
+  border: solid white 1.5px;
+}
+
+.accesories-box-6 {
+  padding: 10px 10px 15px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-grow: 1;
+  background-color: black;
+  color: white;
+  border: solid white 1.5px;
+}
+
+section > div > div > p {
+  margin: 10px;
+  padding: 5px;
+  text-align: justify;
+}
+
+section > div > div > h2 {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #ff9800;
+}
+
+i.large.material-icons {
+  font-size: 50px;
+  text-indent: 145px;
+  color: #ff9800;
 }
