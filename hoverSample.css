@@ -113,14 +113,14 @@ i {
 .wrap {
   display: inline-flex;
   align-content: center;
-  padding: 100px;
+  padding: 30px 100px 30px 100px;
   background: black;
   color: white;
   height: 500px;
   margin-left: 200px;
-  margin-top: 10px;
+  margin-top: 400px;
   margin-right: 200px;
-  margin-bottom: 300px;
+  margin-bottom: 400px;
 }
 
 div > h2 {
@@ -174,6 +174,12 @@ div > a {
   margin-top: 50px;
 }
 
+.section2 {
+  /* border: solid 1px white; */
+  margin: 10px;
+  padding: 10px;
+}
+
 .accesories-box-a {
   display: flex;
   padding: 10px 10px 10px 10px;
@@ -187,48 +193,54 @@ div > a {
   cursor: pointer;
   background-color: #e4c219;
   color: black;
-  transition-delay: 0.4s;
-  transition-timing-function: linear;
+  /* transition-delay: 0.4s; */
+  transform:scale(1.1);
+  transition: ease 400ms;
 }
 
 .accesories-box-2:hover {
   cursor: pointer;
   background-color: #e4c219;
   color: black;
-  transition-delay: 0.4s;
-  transition-timing-function: linear;
+  /* transition-delay: 0.4s; */
+  transform:scale(1.1);
+  transition: ease 400ms;
 }
 
 .accesories-box-3:hover {
   cursor: pointer;
   background-color: #e4c219;
   color: black;
-  transition-delay: 0.4s;
-  transition-timing-function: linear;
+  /* transition-delay: 0.4s; */
+  transform:scale(1.1);
+  transition: ease 400ms;
 }
 
 .accesories-box-4:hover {
   cursor: pointer;
   background-color: #e4c219;
   color: black;
-  transition-delay: 0.4s;
-  transition-timing-function: linear;
+  /* transition-delay: 0.4s; */
+  transform:scale(1.1);
+  transition: ease 400ms;
 }
 
 .accesories-box-5:hover {
   cursor: pointer;
   background-color: #e4c219;
   color: black;
-  transition-delay: 0.4s;
-  transition-timing-function: linear;
+  /* transition-delay: 0.4s; */
+  transform:scale(1.1);
+  transition: ease 400ms;
 }
 
 .accesories-box-6:hover {
   cursor: pointer;
   background-color: #e4c219;
   color: black;
-  transition-delay: 0.4s;
-  transition-timing-function: linear;
+  /* transition-delay: 0.4s; */
+  transform:scale(1.1);
+  transition: ease 400ms;
 }
 
 
@@ -319,3 +331,51 @@ i.large.material-icons {
   text-indent: 145px;
   color: #ff9800;
 }
+
+#someId {
+  color: yellow;
+}
+
+.btn-hireme{
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    background-color: #FFC815;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-hireme:hover{
+    background-color: yellow;
+}
+
+.title-hireme{
+
+    text-transform: capitalize;
+    color: rgb(98, 95, 167);
+    font-size: 40px;
+}
+
+.title-hireme::before{
+    content: "I am ";
+}
+.title-hireme::after{
+    content: "!"
+}
+.container-background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    height:400px;
+    background-image: url(key1.png);
+    background-position: center;
+    /* cover, contain, px o % */
+    background-size: cover;
+    /* Para repetir la imagen en caso de que no logré abarcar todo el ancho del contenedor */
+    background-repeat: no-repeat;
+
+    /* Efecto parallax */
+    background-attachment: fixed;

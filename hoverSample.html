@@ -10,6 +10,17 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <script type = "text/javascript" src="javaScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("i").toggle();
+    $("p").toggle();
+    $("h2").toggle();
+  });
+});
+// This will toggle all "p" elements, but it only works from here, not on JS.
+</script>
 </head>
 <body>
     <header class="menu-container">
@@ -46,7 +57,10 @@
             </div>
         </div>
         <div>
-
+          <button onclick="myFunction()">Click Me</button>
+        <div id="myDIV">
+          This is my DIV element.
+        </div>
         </div>
     </section>
     <section class="wrap">
@@ -85,7 +99,10 @@
       </div>
         </div>
     </section>
-      <section>
+      <section class="section2">
+        <p id="someId">This is some paragraph</p>
+        <!-- <button type="button" onclick="getIt()"name="button">Toggle between hide and show functions</button> -->
+        <button type="button" name="button">Toggle between hide and show functions</button>
         <!-- <button onclick="myFunction()">Try it</button>  This one is just in case you want a button to put an alert on. -->
         <div class="accesories-box-a">
           <div class= "accesories-box-1" onclick="createAlert1()">
@@ -121,6 +138,18 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum voluptatum corrupti ipsam inventore expedita ratione, delectus quae maxime! Asperiores quisquam pariatur distinctio a? Enim quasi ad incidunt laboriosam magni possimus.</p>
           </div>
         </div>
+      </section>
+      <section>
+        <div class="container-background">
+
+            <h2 class="title-hireme">available for freelance</h2>
+            <div class="boton-container">
+
+                <button class="btn-hireme"> Hire me</button>
+            </div>
+
+        </div>
+
       </section>
 </body>
 </html>
