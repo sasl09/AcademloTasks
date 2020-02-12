@@ -25,15 +25,16 @@
 // determiner(askFor,askFor2)
 
 
-// And this is the same as above, but adding a NaN checker:
+// And this is the same as above, but adding a NaN checker with a while loop so that by using
+// "Number" instead of "parseInt", it won't take any strings, special characters, or negative numbers.
 
-var askFor = parseInt(prompt("Enter a number..."))
-var askFor2 = parseInt(prompt("Enter a number..."))
+var askFor = Number(prompt("Enter a number..."))
+var askFor2 = Number(prompt("Enter a number..."))
 function promptIt(x, y) {
-  while (isNaN(x) || isNaN(y)) {
+  while (isNaN(x) || isNaN(y) || x < 0 || y < 0) {
     alert("That's not a number...")
-    x = parseInt(prompt("Enter a number..."));
-    y = parseInt(prompt("Enter a number..."));
+    x = Number(prompt("Enter a number..."));
+    y = Number(prompt("Enter a number..."));
   };
   determiner(x,y)
 
