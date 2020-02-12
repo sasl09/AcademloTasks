@@ -30,14 +30,13 @@
 var askFor = parseInt(prompt("Enter a number..."))
 var askFor2 = parseInt(prompt("Enter a number..."))
 function promptIt(x, y) {
-  if (isNaN(x) || isNaN(y)) {
+  while (isNaN(x) || isNaN(y)) {
     alert("That's not a number...")
     x = parseInt(prompt("Enter a number..."));
     y = parseInt(prompt("Enter a number..."));
-    determiner(x,y)
-  } else {
-    determiner(x,y)
-  }
+  };
+  determiner(x,y)
+
 };
 
 function determiner(x,y) {
