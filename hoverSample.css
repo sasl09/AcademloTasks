@@ -343,6 +343,7 @@ i.large.material-icons {
     color: aliceblue;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .btn-hireme:hover{
@@ -350,9 +351,7 @@ i.large.material-icons {
 }
 
 .title-hireme{
-
-    text-transform: capitalize;
-    color: rgb(98, 95, 167);
+    color: red;
     font-size: 40px;
 }
 
@@ -370,10 +369,10 @@ i.large.material-icons {
     width: 100%;
     background-color: black;
     height:400px;
-    background-image: url(key1.png);
+    background-image: url(LODA.jpg);
     background-position: center;
     /* cover, contain, px o % */
-    background-size: cover;
+    background-size: contain;
     /* Para repetir la imagen en caso de que no logré abarcar todo el ancho del contenedor */
     background-repeat: no-repeat;
 
