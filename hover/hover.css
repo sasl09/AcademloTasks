@@ -1,0 +1,120 @@
+body{
+    font-family: 'open sans';
+    margin: 0px;
+}
+.menu-container{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    height: 50px;
+    padding: 20px 20px;
+    background-color: #98989880;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    flex: 1 1 300px;
+}
+.logo>img{
+    max-height: 100%;
+}
+.menu{
+    flex: 1 1 300px;
+}
+.menu ul{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    list-style: none;
+    padding-left: 0px;
+}
+.menu ul>li{
+    flex-grow: .5;
+}
+.menu a{
+    color: #FFF;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #000;
+}
+.inicio{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    background-image: url(coding.jpg);
+    height: 700px;
+    align-items: center;
+    color: #FFF;
+    justify-content: space-around;
+}
+.inicio>.caption{
+    flex: 0 1 40%;
+    background-color: #00000085;
+    padding: 30px;
+    border-radius: 4px;
+}
+.inicio h1{
+    font-size: 42px;
+    margin-top: 0px;
+}
+.redes-sociales i{
+    padding: 20px;
+    border-radius: 50%;
+    border: solid 1px #FFF;
+    font-size: 21px;
+    color: #FFF;
+    margin: 0px 10px;
+}
+.redes-sociales .fa-facebook-f{
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.seccion-acerca{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    background-color: #000;
+    color: #FFF;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.contenedor-acerca{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-basis: 75%;
+    justify-content: space-between;
+}
+.contenedor-acerca .item{
+    flex-basis: 47%;
+}
+.contenedor-acerca .contenedor-img{
+    padding: 0px 10%;
+}
+.contenedor-acerca .perfil{
+    border: solid 7px yellow;
+}
+.contenedor-acerca .perfil>img{
+    max-width: 100%;
+}
+.info-legends{
+    font-weight: bold;
+    font-size: 21px;
+    width: 20%;
+    display: inline-block;
+}
+.btn-cv{
+    padding: 20px 30px;
+    background-color: #efbc04;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 30px;
+}
+.btn-cv:hover{
+    background-color: #FFF;
+    color: #efbc04;
+}
