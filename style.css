@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    background: url(agency.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contenedor:after { /*It seems that we need the "after" thingie to make work the opacity filter as a secondary arrangement*/
+    content: ""; /*This is the one to make background kinda dark and transparent*/
+    position: absolute; /*This makes sure "content: "" is expanded on all the container"*/
+    background-color: #0000007a; /*This is the opacity filter*/
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+div > h2 {
+    z-index: 2; /*z-index will make sure your item will stay on top, otherwise it will get covered by the opacity filter*/
+}
+
+.item{
+    font-size: 1.2rem;
+    padding: 0px 15px;
+    z-index: 2;
+}
+
+h2{
+    margin: 15px 0px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    background-color: #172b43;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-tablet, .menu-mobile{
+    display: none;
+}
+
+.menu-mobile{
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.menu-mobile ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-mobile ul>li{
+    padding: 10px 0px;
+    border-bottom: 1px solid #FFF;
+    font-weight: bold;
+}
+
+.menu-mobile ul>li:last-child{
+    border-bottom: none;
+}
+
+.logo{
+    flex-grow: .5;
+    padding: 20px;
+    /* font-weight: bold; */
+    padding: 20px;
+    margin: 20px;
+    background: url(logo.jpg);
+    background-size: cover;
+    background-position: left;
+    position: relative;
+}
+
+.toggle{
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 20px;
+
+}
+
+.menu-active{
+    display: block;
+}
+
+
+@media only screen and (min-width: 768px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logo{
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .menu-mobile{
+        display: none;
+    }
+
+    .toggle{
+        display: none;
+    }
+
+    .menu-tablet{
+        display: block;
+        flex-grow: 4;
+    }
+
+    .menu-tablet ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-tablet ul>li{
+        display: inline-block;
+        flex-grow: 1;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+footer {
+  background-color: #23456d;
+  padding: 20px;
+}
+
+footer > div > img {
+  max-width: 30%;
+  max-height: 30%;
+}
+
+footer > div > ul > li {
+  list-style: none;
+  padding: 15px 0px 15px 0px;
+}
+
+footer {
+    font-size: 1.2rem;
+    padding: 15px 15px;
+    z-index: 2;
+}
+
+footer > div > h2 {
+  text-align: left;
+  padding-left: 3px;
+}
+
+.redes-sociales .fa-facebook-f {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.redes-sociales .fa-github {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.redes-sociales .fa-instagram {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fa-facebook-f:hover {
+  color: #fff;
+  background-color: #3b5998;
+  border-radius: 50%;
+  border: solid 1px #FFF;
+  font-size: 21px;
+  color: #FFF;
+}
+
+.fa-github:hover {
+  color: #fff;
+  background-color: #a98c8c;
+  border-radius: 50%;
+  border: solid 1px #FFF;
+  font-size: 21px;
+  color: #FFF;
+}
+
+.fa-instagram:hover {
+  color: #fff;
+  background-color: #53d6dc;
+  border-radius: 50%;
+  border: solid 1px #FFF;
+  font-size: 21px;
+  color: #FFF;
+}
+
+.redes-sociales {
+  padding: 20px 20px 20px 5px;
+}
