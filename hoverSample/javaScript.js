@@ -1,4 +1,4 @@
-$(document).ready(function(){ /*For this jquery func to work you need to add the jquery bit before JS on the html file*/
+$(document).ready(function(){
   $("button").click(function(){
     $("i").toggle();
     $("p").toggle();
