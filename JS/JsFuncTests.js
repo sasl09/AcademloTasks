@@ -25,19 +25,11 @@ betweenNums(4,9) /*Returns the result expected*/
 
 // This function will find numeros primos:
 
-let i = 2, primo = false;
-(function(numero){
-  while(i < numero){
-    if(numero%i === 0){
-      i = numero;
-    }else{
-      primo = true;
-    }
-    i++;
-  }
-  if(primo){
-    console.log("El numero " + numero+ " es un numero primo");
-  }else{
-    console.log("El numero " + numero + " no es un numero primo")
-  }
-}(37));
+function isPrime(num) {
+  for(var i = 2; i < num; i++)
+    // console.log(num%i); This line is just for debuggin
+    if(num % i === 0) /*i will be increasing value with every iteration, and if our "num" % one of the values of i hits 0, our func will return false, and it's over. Not a prime number*/
+    return false;
+  return num > 1;
+}
+isPrime(9)
