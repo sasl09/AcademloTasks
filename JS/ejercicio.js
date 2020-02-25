@@ -169,6 +169,14 @@ checking(z)
 
 
 // Assignment 6:
+// 1. Escribe una función de flecha que tome un arreglo de números como argumento y regrese el último elemento de ese arreglo
+// Entrada/Input:
+// [3, 3, 2, 10, 9]
+// [8, 2, 9, 20, 9, 1, 39, 20]
+// Salida/Output: 9
+// Salida/Output: 20
+//
+
 
 let regresaUltimoElem = (arreglo) => {
   console.log(arreglo.length);
@@ -180,6 +188,12 @@ regresaUltimoElem([8,2,9,20,9,1,39,20])
 
 
 
+
+// 2. Escribe una función anónima que tome un arreglo de números como argumento y sustituye todos los números impares por su mismo valor multiplicado por 3
+// Entrada/Input: [5, 2, 10, 3, 9]
+// Salida/Output: [15, 2, 10, 9, 27]
+//
+
 (function(arreglo){
   arreglo.forEach((elemento, index) => {
     if (elemento % 2 !== 0) {
@@ -190,6 +204,17 @@ regresaUltimoElem([8,2,9,20,9,1,39,20])
   console.log(arreglo);
 }([3,3,2,10,9]));
 
+
+
+// 3. Escribe una función de flecha que tome un arreglo de números como argumento y muestra el resultado de la sumatoria de todos los números
+// Entrada/Input: [10, 30, 15, 25, 5]
+// Salida/Output: 85
+
+
+let arr = [10,30,15,25,5];
+let total = 0;
+arr.forEach(element => total += element);
+  console.log(total);
 
 
 // Extra code to create an object from two arrays:
@@ -209,3 +234,21 @@ var emptyObj = {};
 // console.log(newarray); /*This is the array that contains our object */
 console.log(obj); /*This is our original object, though in the end is the same as the second one we created, unless we decide not to use any secondary object to merge it with */
 //console.log(emptyObj); /*Here's the new merged object*/
+
+
+
+/*Extra code for arrow functions*/
+
+let arr = [3,5,7,8,9];
+let total = 0;
+arr.forEach(element => total += element);
+  console.log(total);
+
+/*This one will get you each index and value*/
+arr.forEach((element, index) => {
+    console.log(`Current index: ${index}`);
+    console.log(element);
+});
+
+/*This is a one liner arrow function*/
+arr.forEach(element => { for(let i = 0; i < 1; i++){total += element;}}); console.log(total);
