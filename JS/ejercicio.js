@@ -139,16 +139,69 @@ Output/Salida: 1x1 = 1, 1x2 = 2, 1x3 = 3 ... 1x10 = 10
 7x1 = 7 ... 7x10 = 70
 */
 
+
 var z = Number(prompt("Enter a number between 1 and infinity: "));
 
 const arrow = (a,b) => {let i = 1; while(i <= b) {console.log(a*i);i++;}console.log("\n")};
 
+function checking(y){
+  if(y >= 1 && y !== isNaN(y)) {
+        multip(y, arrow)
+    };
+  while(y === isNaN(y) || y < 1) {
+      y = Number(prompt("Enter a number between 1 and infinity: "));
+      if(y >= 1 && y !== isNaN(y)) {
+        multip(y, arrow)
+    }
+  }
+};
+
 function multip(x, arrowFunc){
   for(let i = 1; i <= x; i++) {
-    if(x !== isNaN(x) && x >= 1){
+    if(x !== isNaN(x)){
       arrow(i,10)
     }
   }
 };
 
-multip(z, arrow)
+checking(z)
+
+
+
+// Assignment 6:
+
+let regresaUltimoElem = (arreglo) => {
+  console.log(arreglo.length);
+  console.log(arreglo[arreglo.length -1]);
+}
+
+regresaUltimoElem([3,3,2,10,9])
+regresaUltimoElem([8,2,9,20,9,1,39,20])
+
+
+
+(function(arreglo){
+  arreglo.forEach((elemento, index) => {
+    if (elemento % 2 !== 0) {
+      // arreglo[index] = elemento*3;
+      arreglo[index] *= 3;
+    }
+  });
+  console.log(arreglo);
+}([3,3,2,10,9]));
+
+
+
+// Extra code to create an object from two arrays:
+
+let columns = ["Daniel", "Arturo", "Tito"];
+let rows = [1, 2, 3];
+
+var newarray = [];
+  for (var i = 0; i < rows.length; i ++) {
+    var obj = {};
+    obj[rows[i]] = columns[i];
+    newarray.push(obj);
+};
+
+console.log(newarray);
