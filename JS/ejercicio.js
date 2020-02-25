@@ -196,12 +196,16 @@ regresaUltimoElem([8,2,9,20,9,1,39,20])
 
 let columns = ["Daniel", "Arturo", "Tito"];
 let rows = [1, 2, 3];
-
 var newarray = [];
+var emptyObj = {};
   for (var i = 0; i < rows.length; i ++) {
     var obj = {};
     obj[rows[i]] = columns[i];
-    newarray.push(obj);
+    newarray.push(obj); /*This in case we wanna save our object in an array */
+    emptyObj = Object.assign(obj, emptyObj); /*This in case we wanna merge our object with another object */
+    obj = Object.assign(obj, obj); /*This is just the first empty object we created and this is how we append every new item created by each iteration... */
 };
 
-console.log(newarray);
+// console.log(newarray); /*This is the array that contains our object */
+console.log(obj); /*This is our original object, though in the end is the same as the second one we created, unless we decide not to use any secondary object to merge it with */
+//console.log(emptyObj); /*Here's the new merged object*/
