@@ -178,13 +178,13 @@ checking(z)
 //
 
 
-let regresaUltimoElem = (arreglo) => {
-  console.log(arreglo.length);
-  console.log(arreglo[arreglo.length -1]);
+let sendLastBack = (arr) => {
+  console.log(arr.length);
+  console.log(arr[arr.length -1]);
 }
 
-regresaUltimoElem([3,3,2,10,9])
-regresaUltimoElem([8,2,9,20,9,1,39,20])
+sendLastBack([3,3,2,10,9])
+sendLastBack([8,2,9,20,9,1,39,20])
 
 
 
@@ -194,14 +194,13 @@ regresaUltimoElem([8,2,9,20,9,1,39,20])
 // Salida/Output: [15, 2, 10, 9, 27]
 //
 
-(function(arreglo){
-  arreglo.forEach((elemento, index) => {
-    if (elemento % 2 !== 0) {
-      // arreglo[index] = elemento*3;
-      arreglo[index] *= 3;
+(function(arr){
+  arr.forEach((element, index) => {
+    if (element % 2 !== 0) {
+      arr[index] *= 3;
     }
   });
-  console.log(arreglo);
+  console.log(arr);
 }([3,3,2,10,9]));
 
 
