@@ -86,12 +86,32 @@ maxandmin(array)
 // Salida/Output: 4322
 
 
+// let array = [4,3,2,1];
+let array = [1,2,3];
+let arr = 0;
+let mergeThem = (array) => {
+if (arr in array < 0) {
+  console.log("No negative numbers...")
+}else{
+  let merger = "";
+  let element = "";
+  let total = 0;
+  for(let i =0; i<array.length;i++){
+      element = array[i].toString();
+      merger += element;
+  }
+  total = parseInt(merger)+1;
+  console.log(total);
+  }
+};
+mergeThem(array)
 
 
 
-
-
-// (Este punto es opcional) 4. Escribe una función de flecha que reciba como argumento un arreglo y elimine los elementos duplicados dentro de ese arreglo para que sólo quede un elemento de estos que estaban repetidos; por último muestra el tamaño del arreglo y cómo quedaría el arreglo una vez que se eliminan esos elementos.
+// (Este punto es opcional) 4. Escribe una función de flecha que reciba como argumento un arreglo y
+// elimine los elementos duplicados dentro de ese arreglo para que sólo quede un elemento de estos que
+// estaban repetidos; por último muestra el tamaño del arreglo y cómo quedaría el arreglo una vez que se
+// eliminan esos elementos.
 //
 // Entrada/Input: [1,1,2]
 // Salida/Output: El tamaño del arreglo es 2 y el arreglo quedaría de la siguiente forma: [1, 2]
@@ -100,3 +120,56 @@ maxandmin(array)
 // Salida/Ouput: El tamaño del arreglo es 4 y el arreglo quedaría de la siguiente forma: [3, 2, 4, 5]
 //
 // Tendrán 50 minutos para terminar los 3 puntos, favor de subir el archivo .js con su solución
+
+// Using filter:
+let array = [1,1,2];
+// let array = [1,1,2,3,3,3,2,1,4];
+// let array = [3, 2, 3, 4, 5, 3];
+var z = array.filter((a, b) => array.indexOf(a) === b)
+console.log("The size of the array is: "+z.length+ "\n" + z);
+
+
+
+// Another way:
+function removeDuplicates(array) {
+  let a = []
+  array.map(x => {
+    if(!a.includes(x)) {
+      a.push(x)
+    }
+    })
+  return a
+};
+
+removeDuplicates(array)
+
+
+// Now using an object:
+function removeDuplicates(array) {
+  let x = {};
+  array.forEach(function(i) {
+    if(!x[i]) {
+      x[i] = true
+    }
+  })
+  return Object.keys(x)
+};
+
+removeDuplicates(array)
+
+
+
+// This one actually creates a set from the values in the array, and a set automatically does not accept
+// any repeated elements:
+
+// Remember the "..." (spread operator) creates an array from going from beginning to end of another array,
+// or taking values from an iteration:
+
+
+let array = [1,2,2,3,3,4,5,5,5,5,6,1,2,3,8];
+function removeDuplicates(array) {
+  array.splice(0, array.length, ...(new Set(array)))
+  console.log(array);
+};
+
+removeDuplicates(array)
