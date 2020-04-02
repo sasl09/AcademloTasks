@@ -1,9 +1,11 @@
 //Number 1:
 time = new Date();
+function makeDate(date){
+  console.log(time.getFullYear() +'/'+ time.getMonth()+"/"+ time.getDate());
+  console.log(time.getFullYear() +'-'+ time.getMonth()+"-"+ time.getDate());
+};
 
-console.log(time.getFullYear() +'/'+ time.getMonth()+"/"+ time.getDate());
-
-console.log(time.getFullYear() +'-'+ time.getMonth()+"-"+ time.getDate());
+makeDate(time)
 
 
 
