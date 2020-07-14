@@ -1,0 +1,15 @@
+{% extends 'schoolApp/base.html'%}
+{% block content %}
+    {% for subject in subjects %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ subject.student }}</a>
+              <small class="text-muted">{{ subject.starting_date|date:"F d, Y" }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ subject.title }}</a></h2>
+            <p class="article-content">{{ subject.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content%}
